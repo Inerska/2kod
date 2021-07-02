@@ -11,10 +11,14 @@
 
     <Style Selector="TextBox.MainWritableContent">
       <Setter Property="Foreground" Value="#B18E64"/>
-      <Setter Property="Margin" Value="20"/>
+      <Setter Property="Padding" Value="20"/>
       <Setter Property="FontFamily" Value="Consolas, 'Courier New', monospace"/>
-      <Setter Property="Background" Value="Transparent"/>
+      <Setter Property="Background" Value="#000"/>
       <Setter Property="BorderThickness" Value="0" />
+    </Style>
+
+    <Style Selector="TextBox.MainWritableContent:focus">
+      <Setter Property="Background" Value="#B18E64" />
     </Style>
 
   </Application.Styles>
