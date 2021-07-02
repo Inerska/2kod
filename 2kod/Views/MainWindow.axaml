@@ -15,7 +15,8 @@
   </Design.DataContext>
 
   <Grid RowDefinitions="*" ColumnDefinitions="*, *">
-    <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+    <TextBox Grid.Column="0" Foreground="#B18E64" Text="Hello world!" Margin="20" FontFamily="Consolas" Background="Transparent" BorderThickness="0"/>
+    <TextBox Grid.Column="1" Foreground="#B18E64" Text="Hello world!" Margin="20" FontFamily="Consolas" Background="Transparent" BorderThickness="0"/>
   </Grid>
 
 </Window>
