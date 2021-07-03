@@ -17,8 +17,14 @@
       <Setter Property="BorderThickness" Value="0" />
     </Style>
 
+    <Style Selector="TextBox.MainWritableContent:pointerover">
+      <Setter Property="Foreground" Value="red" />
+    </Style>
+
+
     <Style Selector="TextBox.MainWritableContent:focus">
-      <Setter Property="Background" Value="#B18E64" />
+      <Setter Property="Foreground" Value="green" />
+      <Setter Property="Background" Value="#fff"/>
     </Style>
 
   </Application.Styles>
