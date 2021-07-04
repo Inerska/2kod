@@ -24,17 +24,13 @@
       <Setter Property="TextWrapping" Value="Wrap"/>
     </Style>
 
-    <Style Selector="TextBox.MainWritableContent:pointover">
+    <Style Selector="TextBox.MainWritableContent:pointerover /template/ Border#PART_BorderElement">
       <Setter Property="Background" Value="black" />
     </Style>
 
     <Style Selector="TextBox.MainWritableContent:focus /template/ Border#PART_BorderElement">
       <Setter Property="BorderThickness" Value="0" />
       <Setter Property="Background" Value="#161616" />
-    </Style>
-
-    <Style Selector="TextBox.MainWritableContent:pointover /template/ TextBox">
-      <Setter Property="Background" Value="#000" />
     </Style>
 
   </Application.Styles>
