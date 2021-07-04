@@ -15,7 +15,7 @@
   </Design.DataContext>
 
   <Grid RowDefinitions="*" ColumnDefinitions="*, *">
-    <StackPanel x:Name="NavigationStackPanel" Grid.ColumnSpan="2" ZIndex="1" Width="500">
+    <StackPanel x:Name="NavigationStackPanel" Grid.ColumnSpan="2" ZIndex="1" Width="500" Margin="10">
       <TextBox
         Height="30"
                Text="kldfghjdflkgjlmdfkgjsdfklmjklmgjdfghdfg85hdfghdfghdfghdfghdfghdfghf"
