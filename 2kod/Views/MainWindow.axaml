@@ -15,8 +15,8 @@
   </Design.DataContext>
 
   <Grid RowDefinitions="*" ColumnDefinitions="*, *">
-    <TextBox Classes="MainWritableContent" Grid.Column="0" Text="Hello world!"/>
-    <TextBox Classes="MainWritableContent" Grid.Column="1" Text="Hello world!"/>
+    <TextBox x:Name="LeftMainWritableContent" Classes="MainWritableContent" Grid.Column="0" Text="Hello world!"/>
+    <TextBox x:Name="RightMainWritableContent" Classes="MainWritableContent" Grid.Column="1" Text="Hello world!"/>
   </Grid>
 
 </Window>
