@@ -15,6 +15,18 @@
   </Design.DataContext>
 
   <Grid RowDefinitions="*" ColumnDefinitions="*, *">
+    <StackPanel Grid.ColumnSpan="2" ZIndex="1">
+      <TextBox
+               Width="500" Height="30"
+               Text="kldfghjdflkgjlmdfkgjsdfklmjklmgjdfghdfg85hdfghdfghdfghdfghdfghdfghf"
+               ZIndex="1" />
+      <ListBox HorizontalAlignment="Center">
+        <ListBoxItem>Hey</ListBoxItem>
+        <ListBoxItem>Hey</ListBoxItem>
+        <ListBoxItem>Hey</ListBoxItem>
+        <ListBoxItem>Hey</ListBoxItem>
+      </ListBox>
+    </StackPanel>
     <TextBox x:Name="LeftMainWritableContent" Classes="MainWritableContent" Grid.Column="0" Text="Hello world!"/>
     <TextBox x:Name="RightMainWritableContent" Classes="MainWritableContent" Grid.Column="1" Text="Hello world!"/>
   </Grid>
