@@ -15,7 +15,13 @@
   </Design.DataContext>
 
   <Grid RowDefinitions="*" ColumnDefinitions="*, *">
-    <StackPanel x:Name="NavigationStackPanel" Grid.ColumnSpan="2" ZIndex="1" Width="500" Margin="10">
+
+    <StackPanel x:Name="NavigationStackPanel"
+                Grid.ColumnSpan="2"
+                ZIndex="1"
+                Width="500"
+                Margin="10"
+                IsVisible="False">
       <TextBox
         Height="30"
                Text="kldfghjdflkgjlmdfkgjsdfklmjklmgjdfghdfg85hdfghdfghdfghdfghdfghdfghf"
@@ -27,6 +33,7 @@
         <ListBoxItem>Hey</ListBoxItem>
       </ListBox>
     </StackPanel>
+
     <TextBox x:Name="LeftMainWritableContent" Classes="MainWritableContent" Grid.Column="0" Text="Hello world!"/>
     <TextBox x:Name="RightMainWritableContent" Classes="MainWritableContent" Grid.Column="1" Text="Hello world!"/>
   </Grid>
