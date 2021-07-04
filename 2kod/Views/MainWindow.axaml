@@ -15,12 +15,12 @@
   </Design.DataContext>
 
   <Grid RowDefinitions="*" ColumnDefinitions="*, *">
-    <StackPanel Grid.ColumnSpan="2" ZIndex="1">
+    <StackPanel x:Name="NavigationStackPanel" Grid.ColumnSpan="2" ZIndex="1" Width="500">
       <TextBox
-               Width="500" Height="30"
+        Height="30"
                Text="kldfghjdflkgjlmdfkgjsdfklmjklmgjdfghdfg85hdfghdfghdfghdfghdfghdfghf"
                ZIndex="1" />
-      <ListBox HorizontalAlignment="Center">
+      <ListBox Width="{Binding ElementName=NavigationStackPanel, Path=Width}">
         <ListBoxItem>Hey</ListBoxItem>
         <ListBoxItem>Hey</ListBoxItem>
         <ListBoxItem>Hey</ListBoxItem>
