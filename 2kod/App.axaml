@@ -16,6 +16,9 @@
       <Setter Property="Padding" Value="20"/>
       <Setter Property="FontFamily" Value="Consolas, 'Courier New', monospace"/>
 
+      <Setter Property="CaretBrush" Value="green" />
+
+
       <Setter Property="BorderThickness" Value="0" />
       <Setter Property="BorderBrush" Value="Transparent" />
 

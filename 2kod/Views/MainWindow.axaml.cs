@@ -4,8 +4,11 @@ using Avalonia.Markup.Xaml;
 
 namespace _2kod.Views
 {
+    using ReactiveUI;
+
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
             InitializeComponent();
@@ -17,8 +20,6 @@ namespace _2kod.Views
         private void InitializeComponent()
         {
             AvaloniaXamlLoader.Load(this);
-
-
         }
     }
 }
