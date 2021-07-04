@@ -7,27 +7,34 @@
   </Application.DataTemplates>
 
   <Application.Styles>
-    <FluentTheme Mode="Dark"/>
+
+    <FluentTheme Mode="Dark" />
 
     <Style Selector="TextBox.MainWritableContent">
       <Setter Property="Foreground" Value="#B18E64"/>
+      <Setter Property="Background" Value="black"/>
       <Setter Property="Padding" Value="20"/>
       <Setter Property="FontFamily" Value="Consolas, 'Courier New', monospace"/>
-      <Setter Property="Background" Value="#000"/>
+
       <Setter Property="BorderThickness" Value="0" />
+      <Setter Property="BorderBrush" Value="Transparent" />
+
       <Setter Property="AcceptsReturn" Value="True"/>
       <Setter Property="AcceptsTab" Value="True" />
       <Setter Property="TextWrapping" Value="Wrap"/>
     </Style>
 
-    <Style Selector="TextBox.MainWritableContent:pointerover">
-      <Setter Property="Foreground" Value="red" />
+    <Style Selector="TextBox.MainWritableContent:pointover">
+      <Setter Property="Background" Value="black" />
     </Style>
 
+    <Style Selector="TextBox.MainWritableContent:focus /template/ Border#PART_BorderElement">
+      <Setter Property="BorderThickness" Value="0" />
+      <Setter Property="Background" Value="#161616" />
+    </Style>
 
-    <Style Selector="TextBox.MainWritableContent:focus">
-      <Setter Property="Foreground" Value="green" />
-      <Setter Property="Background" Value="#fff"/>
+    <Style Selector="TextBox.MainWritableContent:pointover /template/ TextBox">
+      <Setter Property="Background" Value="#000" />
     </Style>
 
   </Application.Styles>
