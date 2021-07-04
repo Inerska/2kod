@@ -15,6 +15,8 @@
       <Setter Property="FontFamily" Value="Consolas, 'Courier New', monospace"/>
       <Setter Property="Background" Value="#000"/>
       <Setter Property="BorderThickness" Value="0" />
+      <Setter Property="AcceptsReturn" Value="True"/>
+      <Setter Property="AcceptsTab" Value="True" />
     </Style>
 
     <Style Selector="TextBox.MainWritableContent:pointerover">
