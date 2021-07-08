@@ -25,23 +25,13 @@
 
   <Grid RowDefinitions="*" ColumnDefinitions="*, *">
 
-    <StackPanel x:Name="NavigationStackPanel"
+    <AutoCompleteBox x:Name="NavigationStackPanel"
                 Grid.ColumnSpan="2"
                 ZIndex="1"
                 Width="500"
                 Margin="10"
                 IsVisible="{Binding IsStackPanelEnabled}">
-      <TextBox
-        Height="30"
-               Text="kldfghjdflkgjlmdfkgjsdfklmjklmgjdfghdfg85hdfghdfghdfghdfghdfghdfghf"
-               ZIndex="1" />
-      <ListBox Width="{Binding ElementName=NavigationStackPanel, Path=Width}">
-        <ListBoxItem>Hey</ListBoxItem>
-        <ListBoxItem>Hey</ListBoxItem>
-        <ListBoxItem>Hey</ListBoxItem>
-        <ListBoxItem>Hey</ListBoxItem>
-      </ListBox>
-    </StackPanel>
+    </AutoCompleteBox>
 
     <TextBox x:Name="LeftMainWritableContent"
                              Classes="MainWritableContent" Grid.Column="0" Text="Hello world!">
