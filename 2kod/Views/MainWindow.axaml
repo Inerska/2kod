@@ -3,12 +3,18 @@
         xmlns:vm="using:_2kod.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:cc="clr-namespace:AvaloniaEdit.CodeCompletion;assembly=AvaloniaEdit"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="_2kod.Views.MainWindow"
         Icon="/Assets/avalonia-logo.ico"
         Title="2kod"
         WindowStartupLocation="CenterScreen"
         Background="#212121">
+
+  <Window.KeyBindings>
+    <KeyBinding Gesture="ALT+F4"
+                Command="{Binding CloseWindowContextCommand, Mode=OneTime}" />
+  </Window.KeyBindings>
 
   <Design.DataContext>
     <vm:MainWindowViewModel/>
@@ -34,8 +40,12 @@
       </ListBox>
     </StackPanel>
 
-    <TextBox x:Name="LeftMainWritableContent" Classes="MainWritableContent" Grid.Column="0" Text="Hello world!"/>
-    <TextBox x:Name="RightMainWritableContent" Classes="MainWritableContent" Grid.Column="1" Text="Hello world!"/>
+    <TextBox x:Name="LeftMainWritableContent"
+                             Classes="MainWritableContent" Grid.Column="0" Text="Hello world!">
+
+    </TextBox>
+    <TextBox x:Name="RightMainWritableContent"
+             Classes="MainWritableContent" Grid.Column="1" Text="Hello world!" />
   </Grid>
 
 </Window>
