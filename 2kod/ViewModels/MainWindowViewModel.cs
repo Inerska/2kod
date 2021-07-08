@@ -6,22 +6,18 @@ namespace _2kod.ViewModels
     using Avalonia.Controls.ApplicationLifetimes;
 
     using ReactiveUI;
+    using ReactiveUI.Fody.Helpers;
 
     public sealed class MainWindowViewModel : ViewModelBase
     {
-        private bool isStackPanelEnabled;
-
         public MainWindowViewModel()
         {
             CloseWindowContextCommand = ReactiveCommand.Create(ExecuteCloseWindowContext);
             OpenNavigationBarCommand = ReactiveCommand.Create(ExecuteOpenNavigationBar);
         }
 
-        public bool IsStackPanelEnabled
-        {
-            get => this.isStackPanelEnabled;
-            private set => this.RaiseAndSetIfChanged(ref this.isStackPanelEnabled, value);
-        }
+        [Reactive]
+        public bool IsStackPanelEnabled { get; set; }
 
         public ReactiveCommand<Unit, Unit> CloseWindowContextCommand { get; }
 

@@ -14,5 +14,6 @@
     <PackageReference Include="Avalonia.Desktop" Version="0.10.3" />
     <PackageReference Include="Avalonia.Diagnostics" Version="0.10.3" />
     <PackageReference Include="Avalonia.ReactiveUI" Version="0.10.3" />
+    <PackageReference Include="ReactiveUI.Fody" Version="14.1.1" />
   </ItemGroup>
 </Project>
