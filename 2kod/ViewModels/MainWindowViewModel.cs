@@ -31,9 +31,6 @@ namespace _2kod.ViewModels
             }
         }
 
-        private void ExecuteOpenNavigationBar()
-        {
-            IsStackPanelEnabled = !IsStackPanelEnabled;
-        }
+        private void ExecuteOpenNavigationBar() => IsStackPanelEnabled = !IsStackPanelEnabled;
     }
 }
