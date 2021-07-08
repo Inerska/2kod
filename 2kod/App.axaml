@@ -1,6 +1,7 @@
 <Application xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="using:_2kod"
+             xmlns:avaloniaEdit="clr-namespace:AvaloniaEdit;assembly=AvaloniaEdit"
              x:Class="_2kod.App">
   <Application.DataTemplates>
     <local:ViewLocator/>
@@ -10,27 +11,24 @@
 
     <FluentTheme Mode="Dark" />
 
-    <Style Selector="TextBox.MainWritableContent">
+    <StyleInclude Source="avares://AvaloniaEdit/AvaloniaEdit.xaml"/>
+
+    <Style Selector="avaloniaEdit|TextEditor.MainWritableContent">
       <Setter Property="Foreground" Value="#B18E64"/>
       <Setter Property="Background" Value="black"/>
       <Setter Property="Padding" Value="20"/>
-      <Setter Property="FontFamily" Value="Consolas, 'Courier New', monospace" />
+      <Setter Property="FontFamily" Value="Consolas, 'Courier New', monospace"/>
 
-      <Setter Property="CaretBrush" Value="green" />
 
       <Setter Property="BorderThickness" Value="0" />
       <Setter Property="BorderBrush" Value="Transparent" />
-
-      <Setter Property="AcceptsReturn" Value="True"/>
-      <Setter Property="AcceptsTab" Value="True" />
-      <Setter Property="TextWrapping" Value="Wrap"/>
     </Style>
 
-    <Style Selector="TextBox.MainWritableContent:pointerover /template/ Border#PART_BorderElement">
+    <Style Selector="avaloniaEdit|TextEditor.MainWritableContent:pointerover /template/ Border#PART_BorderElement">
       <Setter Property="Background" Value="black" />
     </Style>
 
-    <Style Selector="TextBox.MainWritableContent:focus /template/ Border#PART_BorderElement">
+    <Style Selector="avaloniaEdit|TextEditor.MainWritableContent:focus /template/ Border#PART_BorderElement">
       <Setter Property="BorderThickness" Value="0" />
       <Setter Property="Background" Value="#161616" />
     </Style>
