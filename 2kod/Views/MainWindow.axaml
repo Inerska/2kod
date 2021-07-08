@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:cc="clr-namespace:AvaloniaEdit.CodeCompletion;assembly=AvaloniaEdit"
+        xmlns:viewModels="clr-namespace:_2kod.ViewModels"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="_2kod.Views.MainWindow"
         Icon="/Assets/avalonia-logo.ico"
@@ -14,6 +15,8 @@
   <Window.KeyBindings>
     <KeyBinding Gesture="ALT+F4"
                 Command="{Binding CloseWindowContextCommand, Mode=OneTime}" />
+    <KeyBinding Gesture="ALT+X"
+                Command="{Binding OpenNavigationBarCommand, Mode=OneTime}" />
   </Window.KeyBindings>
 
   <Design.DataContext>
@@ -27,7 +30,7 @@
                 ZIndex="1"
                 Width="500"
                 Margin="10"
-                IsVisible="False">
+                IsVisible="{Binding IsStackPanelEnabled}">
       <TextBox
         Height="30"
                Text="kldfghjdflkgjlmdfkgjsdfklmjklmgjdfghdfg85hdfghdfghdfghdfghdfghdfghf"

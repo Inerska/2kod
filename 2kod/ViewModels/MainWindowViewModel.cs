@@ -9,12 +9,23 @@ namespace _2kod.ViewModels
 
     public sealed class MainWindowViewModel : ViewModelBase
     {
+        private bool isStackPanelEnabled;
+
         public MainWindowViewModel()
         {
             CloseWindowContextCommand = ReactiveCommand.Create(ExecuteCloseWindowContext);
+            OpenNavigationBarCommand = ReactiveCommand.Create(ExecuteOpenNavigationBar);
+        }
+
+        public bool IsStackPanelEnabled
+        {
+            get => this.isStackPanelEnabled;
+            private set => this.RaiseAndSetIfChanged(ref this.isStackPanelEnabled, value);
         }
 
         public ReactiveCommand<Unit, Unit> CloseWindowContextCommand { get; }
+
+        public ReactiveCommand<Unit, Unit> OpenNavigationBarCommand { get; }
 
         private static void ExecuteCloseWindowContext()
         {
@@ -22,6 +33,11 @@ namespace _2kod.ViewModels
             {
                 applicationLifetime.Shutdown();
             }
+        }
+
+        private void ExecuteOpenNavigationBar()
+        {
+            IsStackPanelEnabled = !IsStackPanelEnabled;
         }
     }
 }
