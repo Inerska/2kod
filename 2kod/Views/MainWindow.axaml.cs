@@ -4,12 +4,6 @@ using Avalonia.Markup.Xaml;
 
 namespace _2kod.Views
 {
-    using System;
-
-    using Avalonia.Threading;
-
-    using ReactiveUI;
-
     public partial class MainWindow : Window
     {
 
@@ -19,8 +13,6 @@ namespace _2kod.Views
 #if DEBUG
             this.AttachDevTools();
 #endif
-            //TextBox leftMwc = this.Get<TextBox>("LeftMainWritableContent");
-            //DispatcherTimer.RunOnce(() => leftMwc.Focus(), TimeSpan.FromMilliseconds(1));
         }
 
         private void InitializeComponent()

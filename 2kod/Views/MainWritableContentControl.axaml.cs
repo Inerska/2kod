@@ -14,6 +14,8 @@ namespace _2kod.Views
         private void InitializeComponent()
         {
             AvaloniaXamlLoader.Load(this);
+
+            this.Focus();
         }
     }
 }
