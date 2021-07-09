@@ -9,12 +9,12 @@
   <Design.DataContext>
     <vm:MainWritableControlViewModel />
   </Design.DataContext>
-
+  <!--
   <UserControl.KeyBindings>
     <KeyBinding Gesture="TAB"
                 Command="{Binding TabulationInFocusCommand, Mode=OneTime}" />
   </UserControl.KeyBindings>
-
+-->
   <UserControl.Styles>
 
     <Style Selector="TextBox.MainWritableContent">
@@ -26,6 +26,7 @@
       <Setter Property="FontWeight" Value="500" />
 
       <Setter Property="CaretBrush" Value="green" />
+      <Setter Property="Padding" Value="-.5 0 0 0" />
 
       <Setter Property="BorderThickness" Value="0" />
       <Setter Property="BorderBrush" Value="Transparent" />
@@ -50,6 +51,7 @@
            IsFocused="{Binding IsFocused, Mode=OneWayToSource}"
            Text="{Binding TextSource, Mode=TwoWay}"
            Watermark="{Binding WaterMark, Mode=TwoWay}"
+           CaretIndex="{Binding CaretIndex, Mode=TwoWay}"
            />
 
 </UserControl>

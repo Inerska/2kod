@@ -1,6 +1,9 @@
 ﻿namespace _2kod.ViewModels
 {
     using System.Reactive;
+    using System.Text;
+
+    using Avalonia.Controls;
 
     using ReactiveUI;
     using ReactiveUI.Fody.Helpers;
@@ -25,10 +28,15 @@
         [Reactive]
         public string WaterMark { get; set; }
 
+        [Reactive]
+        public int CaretIndex { get; set; }
+
 
         private void ExecuteTabulationInFocus()
         {
-            TextSource += "Hey";
+            //TextSource += '\t';
+
+            //CaretIndex = TextSource.LastIndexOfAny(new[] { '\t' }) + 1;
         }
     }
 }
