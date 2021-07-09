@@ -10,6 +10,11 @@
     <vm:MainWritableControlViewModel />
   </Design.DataContext>
 
+  <UserControl.KeyBindings>
+    <KeyBinding Gesture="TAB"
+                Command="{Binding TabulationInFocusCommand, Mode=OneTime}" />
+  </UserControl.KeyBindings>
+
   <UserControl.Styles>
 
     <Style Selector="TextBox.MainWritableContent">
@@ -41,6 +46,10 @@
 
   </UserControl.Styles>
 
-  <TextBox Classes="MainWritableContent" />
+  <TextBox Classes="MainWritableContent"
+           IsFocused="{Binding IsFocused, Mode=OneWayToSource}"
+           Text="{Binding TextSource, Mode=TwoWay}"
+           Watermark="{Binding WaterMark, Mode=TwoWay}"
+           />
 
 </UserControl>

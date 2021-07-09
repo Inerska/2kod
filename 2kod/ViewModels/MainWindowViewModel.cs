@@ -12,9 +12,13 @@ namespace _2kod.ViewModels
     {
         public MainWindowViewModel()
         {
+            MainWritableControlViewModel = new();
+
             CloseWindowContextCommand = ReactiveCommand.Create(ExecuteCloseWindowContext);
             OpenNavigationBarCommand = ReactiveCommand.Create(ExecuteOpenNavigationBar);
         }
+
+        public MainWritableControlViewModel MainWritableControlViewModel { get; set; }
 
         [Reactive]
         public bool IsStackPanelEnabled { get; set; }

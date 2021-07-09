@@ -4,6 +4,8 @@ using Avalonia.Markup.Xaml;
 
 namespace _2kod.Views
 {
+    using _2kod.ViewModels;
+
     public partial class MainWindow : Window
     {
 
