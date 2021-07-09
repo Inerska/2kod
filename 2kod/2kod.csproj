@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
@@ -9,11 +9,11 @@
     <AvaloniaResource Include="Assets\**" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Avalonia" Version="0.10.999-cibuild0014036-beta" />
-    <PackageReference Include="Avalonia.AvaloniaEdit" Version="*" />
-    <PackageReference Include="Avalonia.Desktop" Version="0.10.999-cibuild0014036-beta" />
-    <PackageReference Include="Avalonia.Diagnostics" Version="0.10.999-cibuild0014036-beta" />
-    <PackageReference Include="Avalonia.ReactiveUI" Version="0.10.999-cibuild0014036-beta" />
+    <PackageReference Include="Avalonia" Version="0.10.3" />
+    <PackageReference Include="Avalonia.AvaloniaEdit" Version="0.10.4" />
+    <PackageReference Include="Avalonia.Desktop" Version="0.10.3" />
+    <PackageReference Include="Avalonia.Diagnostics" Version="0.10.3" />
+    <PackageReference Include="Avalonia.ReactiveUI" Version="0.10.3" />
     <PackageReference Include="ReactiveUI.Fody" Version="14.1.1" />
   </ItemGroup>
 </Project>

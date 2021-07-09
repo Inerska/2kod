@@ -3,7 +3,9 @@
         xmlns:vm="using:_2kod.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:avaloniaEdit="clr-namespace:AvaloniaEdit;assembly=AvaloniaEdit"
+        xmlns:cc="clr-namespace:AvaloniaEdit.CodeCompletion;assembly=AvaloniaEdit"
+        xmlns:viewModels="clr-namespace:_2kod.ViewModels"
+        xmlns:avaloniaEdit="https://github.com/avaloniaui/avaloniaedit"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="_2kod.Views.MainWindow"
         Icon="/Assets/avalonia-logo.ico"
@@ -32,10 +34,10 @@
                 IsVisible="{Binding IsStackPanelEnabled, Mode=TwoWay}">
     </AutoCompleteBox>
 
-    <avaloniaEdit:TextEditor Name="LeftMainWritableContent"
-                             Classes="MainWritableContent" Grid.Column="0"/>
-    <avaloniaEdit:TextEditor Name="RightMainWritableContent"
-                            Classes="MainWritableContent" Grid.Column="1"/>
+    <avaloniaEdit:TextEditor x:Name="LeftMainWritableContent"
+                            Classes="MainWritableContent" Grid.Column="0" Text="Hello world!" />
+    <avaloniaEdit:TextEditor x:Name="RightMainWritableContent"
+                            Classes="MainWritableContent" Grid.Column="1" Text="Hello world!" />
   </Grid>
 
 </Window>
