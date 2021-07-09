@@ -33,7 +33,7 @@
     </AutoCompleteBox>
 
     <views:MainWritableContentControl x:Name="LeftMainWritableContent"
-                            Grid.Column="0"/>
+                                      Grid.Column="0"/>
     <views:MainWritableContentControl x:Name="RightMainWritableContent"
                                       Grid.Column="1" />
   </Grid>
