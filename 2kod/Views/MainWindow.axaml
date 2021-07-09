@@ -32,11 +32,11 @@
                 IsVisible="{Binding IsStackPanelEnabled, Mode=TwoWay}">
     </AutoCompleteBox>
 
-    <avaloniaEdit:TextEditor Name="LeftMainWritableContent" Document="{Binding Document, Mode=TwoWay}"
+    <avaloniaEdit:TextEditor Name="LeftMainWritableContent"
                              Classes="MainWritableContent" Grid.Column="0"
                              SyntaxHighlighting="C#"
                              />
-    <avaloniaEdit:TextEditor Name="RightMainWritableContent" Document="{Binding Document, Mode=TwoWay}"
+    <avaloniaEdit:TextEditor Name="RightMainWritableContent"
                             Classes="MainWritableContent" Grid.Column="1"
                             SyntaxHighlighting="C#"
                             />
