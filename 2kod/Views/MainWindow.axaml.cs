@@ -19,8 +19,8 @@ namespace _2kod.Views
 #if DEBUG
             this.AttachDevTools();
 #endif
-            TextBox leftMwc = this.Get<TextBox>("LeftMainWritableContent");
-            DispatcherTimer.RunOnce(() => leftMwc.Focus(), TimeSpan.FromMilliseconds(1));
+            //TextBox leftMwc = this.Get<TextBox>("LeftMainWritableContent");
+            //DispatcherTimer.RunOnce(() => leftMwc.Focus(), TimeSpan.FromMilliseconds(1));
         }
 
         private void InitializeComponent()
