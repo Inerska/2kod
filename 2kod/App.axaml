@@ -15,9 +15,10 @@
 
     <Style Selector="avaloniaEdit|TextEditor.MainWritableContent">
       <Setter Property="Foreground" Value="#B18E64"/>
-      <Setter Property="Background" Value="#161616"/>
+      <Setter Property="Background" Value="black"/>
+      <Setter Property="Padding" Value="20"/>
       <Setter Property="FontFamily" Value="Consolas, 'Courier New', monospace"/>
-      <Setter Property="FontSize" Value="17" />
+
 
       <Setter Property="BorderThickness" Value="0" />
       <Setter Property="BorderBrush" Value="Transparent" />
@@ -29,7 +30,7 @@
 
     <Style Selector="avaloniaEdit|TextEditor.MainWritableContent:focus /template/ Border#PART_BorderElement">
       <Setter Property="BorderThickness" Value="0" />
-      <Setter Property="Background" Value="black" />
+      <Setter Property="Background" Value="#161616" />
     </Style>
 
   </Application.Styles>
