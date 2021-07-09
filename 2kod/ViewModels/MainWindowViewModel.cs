@@ -5,8 +5,6 @@ namespace _2kod.ViewModels
     using Avalonia;
     using Avalonia.Controls.ApplicationLifetimes;
 
-    using AvaloniaEdit;
-
     using ReactiveUI;
     using ReactiveUI.Fody.Helpers;
 
@@ -20,9 +18,6 @@ namespace _2kod.ViewModels
 
         [Reactive]
         public bool IsStackPanelEnabled { get; set; }
-
-        [Reactive]
-        public TextEditor? Document { get; set; } = new();
 
         public ReactiveCommand<Unit, Unit> CloseWindowContextCommand { get; }
 

@@ -33,13 +33,9 @@
     </AutoCompleteBox>
 
     <avaloniaEdit:TextEditor Name="LeftMainWritableContent"
-                             Classes="MainWritableContent" Grid.Column="0"
-                             SyntaxHighlighting="C#"
-                             />
+                             Classes="MainWritableContent" Grid.Column="0"/>
     <avaloniaEdit:TextEditor Name="RightMainWritableContent"
-                            Classes="MainWritableContent" Grid.Column="1"
-                            SyntaxHighlighting="C#"
-                            />
+                            Classes="MainWritableContent" Grid.Column="1"/>
   </Grid>
 
 </Window>
