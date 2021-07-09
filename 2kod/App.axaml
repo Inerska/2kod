@@ -14,6 +14,7 @@
       <Setter Property="Foreground" Value="#B18E64"/>
       <Setter Property="Background" Value="black"/>
       <Setter Property="FontFamily" Value="Consolas, 'Courier New', monospace" />
+      <Setter Property="FontSize" Value="17" />
 
       <Setter Property="CaretBrush" Value="green" />
 
