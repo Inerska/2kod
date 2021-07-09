@@ -3,7 +3,7 @@
         xmlns:vm="using:_2kod.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:editor="clr-namespace:RoslynPad.Editor;assembly=RoslynPad.Editor.Avalonia"
+        xmlns:views="clr-namespace:_2kod.Views"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="_2kod.Views.MainWindow"
         Icon="/Assets/avalonia-logo.ico"
@@ -32,10 +32,10 @@
                 IsVisible="{Binding IsStackPanelEnabled, Mode=TwoWay}">
     </AutoCompleteBox>
 
-    <TextBox x:Name="LeftMainWritableContent"
-                            Classes="MainWritableContent" Grid.Column="0" Text="Hello world!" />
-    <TextBox x:Name="RightMainWritableContent"
-             Classes="MainWritableContent" Grid.Column="1" Text="Hello world!" />
+    <views:MainWritableContentControl x:Name="LeftMainWritableContent"
+                            Grid.Column="0"/>
+    <views:MainWritableContentControl x:Name="RightMainWritableContent"
+                                      Grid.Column="1" />
   </Grid>
 
 </Window>

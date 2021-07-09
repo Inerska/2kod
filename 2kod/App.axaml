@@ -10,31 +10,5 @@
 
     <FluentTheme Mode="Dark" />
 
-    <Style Selector="TextBox.MainWritableContent">
-      <Setter Property="Foreground" Value="#B18E64"/>
-      <Setter Property="Background" Value="black"/>
-      <Setter Property="FontFamily" Value="Consolas, 'Courier New', monospace" />
-      <Setter Property="FontSize" Value="17" />
-      <Setter Property="FontWeight" Value="500" />
-
-      <Setter Property="CaretBrush" Value="green" />
-
-      <Setter Property="BorderThickness" Value="0" />
-      <Setter Property="BorderBrush" Value="Transparent" />
-
-      <Setter Property="AcceptsReturn" Value="True"/>
-      <Setter Property="AcceptsTab" Value="True" />
-      <Setter Property="TextWrapping" Value="Wrap"/>
-    </Style>
-
-    <Style Selector="TextBox.MainWritableContent:pointerover /template/ Border#PART_BorderElement">
-      <Setter Property="Background" Value="black" />
-    </Style>
-
-    <Style Selector="TextBox.MainWritableContent:focus /template/ Border#PART_BorderElement">
-      <Setter Property="BorderThickness" Value="0" />
-      <Setter Property="Background" Value="#161616" />
-    </Style>
-
   </Application.Styles>
 </Application>
